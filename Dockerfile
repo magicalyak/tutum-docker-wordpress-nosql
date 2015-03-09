@@ -23,11 +23,11 @@ RUN chmod 755 /*.sh
 RUN chmod -R 777 /app/wp-content
 
 # Expose environment variables
-ENV DB_HOST **LinkMe**
-ENV DB_PORT **LinkMe**
+ENV DB_HOST db01
+ENV DB_PORT 3306
 ENV DB_NAME wordpress
 ENV DB_USER admin
-ENV DB_PASS **ChangeMe**
+ENV DB_PASS maria_dbpass
 
 EXPOSE 80
 VOLUME ["/app/wp-content"]
