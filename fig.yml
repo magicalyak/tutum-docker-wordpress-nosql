@@ -11,6 +11,6 @@ wordpress:
     DB_HOST: "db01"
     DB_PORT: "3306"
 db:
-  image: tutum/mysql:5.5
+  image: tutum/mariadb:latest
   environment:
-    MYSQL_PASS: "maria_dbpass"
+    MARIADB_PASS: "maria_dbpass"
